@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.DzvgQYIlEewHGQY4VqXzTgHaEv&pid=Api&P=0&h=220'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.978);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background: transparent;
+    color: #fdfdfd;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #666;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 12px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #555;
+}
